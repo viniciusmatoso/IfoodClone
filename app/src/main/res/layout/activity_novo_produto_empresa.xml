@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.NovoProdutoEmpresaActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editNomeProduto"
+            android:background="@drawable/bt_edit_custom"
+            android:hint="Nome"
+            android:layout_marginBottom="8dp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editDescricaoProduto"
+            android:background="@drawable/bt_edit_custom"
+            android:hint="Descrição"
+            android:layout_marginBottom="8dp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editPrecoProduto"
+            android:background="@drawable/bt_edit_custom"
+            android:hint="Preço"
+            android:layout_marginBottom="8dp"
+            android:inputType="number"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:text="salvar"
+            android:textColor="@color/branco"
+            android:padding="16dp"
+            android:onClick="validarDadosProduto"
+            android:backgroundTint="@color/vermelho"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
