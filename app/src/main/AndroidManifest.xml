@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IfoodClone">
-        <activity android:name=".activities.CardapioActivity"
-            android:parentActivityName=".activities.UsuarioActivity"></activity>
+        <activity android:name=".activities.PedidosActivity"
+            android:parentActivityName=".activities.EmpresaActivity"/>
+        <activity
+            android:name=".activities.CardapioActivity"
+            android:parentActivityName=".activities.UsuarioActivity" />
         <activity
             android:name=".activities.ConfiguracaoUsuarioActivity"
-            android:parentActivityName=".activities.UsuarioActivity"></activity>
+            android:parentActivityName=".activities.UsuarioActivity" />
         <activity
             android:name=".activities.NovoProdutoEmpresaActivity"
             android:parentActivityName=".activities.EmpresaActivity" />

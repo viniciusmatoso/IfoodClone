@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPedidoNome"
+        android:layout_marginBottom="8dp"
+        android:text="Seu nome aqui"
+        android:textColor="@color/preto"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtPedidoEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereço: rua almeida prado, 1300"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pgto: Dinheiro"
+        android:id="@+id/txtPedidoPgto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPedidoObs"
+        android:text="Obs: Teste"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtPedidoItens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/preto"
+        android:text="1 - Filé ao molho 4 queijos"/>
+
+    <include layout="@layout/divisor" />
+
+</LinearLayout>

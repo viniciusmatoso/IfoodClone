@@ -51,9 +51,7 @@ public class EmpresaActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
-
         idUsuarioLogado = UsuarioFirebase.getIdUsuario();
-
         firebaseRef = ConfiguracaoFirebase.getFirebase();
 
         inicializaComponentes();
@@ -145,9 +143,15 @@ public class EmpresaActivity extends AppCompatActivity {
             case R.id.menuNovoProduto:
                  abrirNovoProduto();
                  break;
+            case R.id.menuPedidos:
+                abrirPedidos();
 
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void abrirPedidos() {
+        startActivity(new Intent(EmpresaActivity.this, PedidosActivity.class));
     }
 
     private void deslogarUsuario(){
